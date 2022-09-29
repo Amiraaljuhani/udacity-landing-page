@@ -1,0 +1,102 @@
+<!DOCTYPE >
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Manipulating the DOM</title>
+        <!-- Load Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet" />
+        <!-- Load Styles -->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+        <header class="page__header">
+            <nav class="navbar__menu">
+                <!-- Navigation starts as empty UL that will be populated with JS -->
+                <ul id="navbar__list"></ul>
+            </nav>
+        </header>
+        <main>
+            <header class="main__hero">
+                <h1>KSA National Day</h1>
+            </header>
+            <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+            <section id="section1" data-nav="Section 1" class="your-active-class">
+                <div class="landing__container">
+                    <h2>​​National Day</h2>
+                    <p>
+                        The Kingdom of Saudi Arabia celebrates its national day on the first day of September 23rd of each year and to commemorate the unification of the Kingdom and its founding at the hands of His Majesty King Abdul Aziz
+                        bin Abdul Rahman Al Saud, may Allah have mercy on him.
+                    </p>
+
+                    <p>
+                        This day of the year 1351 AH / 1932 AD witnessed the birth of the Kingdom of Saudi Arabia after an epic battle, led by founder King Abdul Aziz bin Abdul Rahman Al Saud - God rest his soul - over the past thirty-two
+                        years after He recovered the city of Riyadh, capital of the kingdom of his ancestors and fathers in the fifth the month of Shawwal in 1319, corresponding to 15 January 1902. On the 17th of Jomada Al-oula 1351, A
+                        royal decree was issued to declare the unification of all parts of the modern kingdom under the name of Saudi Arabia, King Abdulaziz chose on Thursday, May 21st of the same year, September 23rd 1932, the day of the
+                        proclamation of the Kingdom of Saudi Arabia.​
+                    </p>
+                </div>
+            </section>
+            <section id="section2" data-nav="Section 2">
+                <div class="landing__container">
+                    <h2>The Beginning of the New Era​</h2>
+                    <p>
+                        King Abdulaziz was in his twenties when left Kuwait leading a handful of his relatives and aids towards Riyadh, by then he was about 26 years old. The Arab peninsula was in a mess. But on the 15th of January 1902
+                        King Abdulaziz was able to enter Riyadh City victoriously and the Arab peninsula witnessed a new era. He took over both the political and religious powers when his father, Imam Abdurrahman bin Faisal stepped down for
+                        him. This took place in the Grand Mosque after the Jumaah prayer.
+                    </p>
+                    <p>
+                        Gradually, the new King started to unite Najd area beginning with southern Riyadh when he defeated his opponents in an area called Dalam near Kharj thereby taking over all towns of southern Riyadh including Kharj, Al
+                        Hareeq, al Aflaj and Wadi Al Dawasir.
+                    </p>
+                    <p>
+                        King Abdulaziz then went to Al Washam area and conquered its capital city Shagra and then went on to Thadiq and the capital of Sudair Al Majmaah. This was culminated in uniting all these areas under his rule and
+                        became part of what is known as the Kingdom of Saudi Arabia.
+                    </p>
+                    <p>King Abdulaziz was able to conquer Gasim area in the 1321/1324 after several minor battles but the last and decisive one was Raudat Mahannah on the 14th of April 1906.</p>
+                </div>
+            </section>
+            <section id="section3" data-nav="Section 3">
+                <div class="landing__container">
+                    <h2>Flag of the Kingdom</h2>
+                    <p>
+                        The flag of the Kingdom of Saudi Arabia is rectangular and its width is two-thirds of its length. It has a green background inscribed in the middle with the Islamic testimony (Shahada) “La Elah Ella Allah; Mohammed
+                        Rasul Allah” (There is no God but Allah; Mohammed is the Messenger of Allah) is written in an Arabic calligraphic form called “tholuth”. Beneath it is an Arab sword, the handle of which is turned to the direction of
+                        the flag’s mast. The Flag of Saudi Arabia must not be hung at half mast or touch ground or water in respect of the Shahada written on it.
+                    </p>
+                </div>
+            </section>
+
+            <section id="section4" data-nav="Section 4">
+                <div class="landing__container">
+                    <h2>National Emblem</h2>
+                    <p>
+                        The national emblem of the Kingdom of Saudi Arabia consists of a palm tree on top of two crossed Arab swords. Swords symbolize strength, stamina and sacrifice while the palm tree symbolizes vitality, growth and
+                        prosperity.
+                    </p>
+                </div>
+            </section>
+
+            <section id="section5" data-nav="Section 5">
+                <div class="landing__container">
+                    <h2>Inspiring Quotes by the King</h2>
+                    <p><q>I am but one of You; whatever Troubles you, troubles me; whatever pleases you, please me</q></p>
+                    <p>
+                        <q>We will continue, God willing, to hold the straight course that this country has followed since its establishment by the late King Abdulaziz.</q>
+                    </p>
+                    <p></p>
+                </div>
+            </section>
+        </main>
+        <footer class="page__footer">
+            <p>&copy Udacity</p>
+        </footer>
+        <script src="js/app.js"></script>
+    </body>
+</html>
